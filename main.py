@@ -37,10 +37,9 @@ def findDiagnosis(data, userInput):
 
 
 def main():
-    data = readData('data.txt')
     userInput = input(
         "Hello! My name is The Doctor. What seems to be the problem?\n")
-    
+    data = readData('data.txt')
 
     found = findDiagnosis(data, userInput)
     if not found:
@@ -49,3 +48,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
